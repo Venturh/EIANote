@@ -1,0 +1,67 @@
+:root {
+	--item-margin: 15px;
+}
+
+.container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+.loginlogo {
+	height: 30vh;
+	margin-bottom: 20px;
+}
+
+.login-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.login-container ion-item {
+	border-radius: 0.5rem;
+	margin-top: var(--item-margin);
+}
+
+.login-container ion-button {
+	margin-top: var(--item-margin);
+}
+
+.login-registertext {
+	margin-top: var(--item-margin);
+	text-align: center;
+}
+
+.login-registertext a {
+	text-decoration: none;
+}
+
+.container-loading {
+	text-align: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.checkbox {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+	.login-container {
+		flex-direction: column;
+	}
+	.loginlogo {
+		height: 40vh;
+		margin-bottom: 20px;
+	}
+}
